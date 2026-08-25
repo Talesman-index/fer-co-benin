@@ -516,24 +516,24 @@ h1, h2, h3, h4, h5 {
   filter: brightness(0.72) contrast(1.1);
 }
 
-/* Overlay photographique multi-stop (Sombre à gauche pour le texte, chaleur et détails à droite) */
+/* Overlay photographique haute précision : Sombre à gauche, laissant respirer l'architecture et les ouvriers à droite */
 .hero-gradient-overlay {
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    105deg,
-    rgba(11, 13, 17, 0.94) 0%,
-    rgba(13, 16, 21, 0.88) 36%,
-    rgba(222, 82, 47, 0.38) 68%,
-    rgba(11, 13, 17, 0.55) 100%
+    95deg,
+    rgba(10, 12, 16, 0.96) 0%,
+    rgba(11, 14, 19, 0.91) 40%,
+    rgba(15, 18, 24, 0.50) 65%,
+    rgba(15, 18, 24, 0.20) 100%
   );
 }
 
 .hero-vignette-overlay {
   position: absolute;
   inset: 0;
-  background: radial-gradient(circle at 75% 35%, rgba(222, 82, 47, 0.22) 0%, transparent 65%),
-              linear-gradient(to top, rgba(11, 13, 17, 0.85) 0%, transparent 25%);
+  background: radial-gradient(circle at 80% 38%, rgba(222, 82, 47, 0.16) 0%, transparent 60%),
+              linear-gradient(to top, rgba(10, 12, 16, 0.90) 0%, transparent 20%);
 }
 
 .hero-mesh-grid {
@@ -541,40 +541,58 @@ h1, h2, h3, h4, h5 {
   inset: 0;
   background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
   background-size: 32px 32px;
-  opacity: 0.3;
+  opacity: 0.25;
 }
 
-/* Contenu Principal du Hero (Spacieux, Épuré & Haute Lisibilité) */
-.hero-grid-content {
+/* ==========================================================================
+   COMPOSITION HERO ARCHITECTURALE & ÉDITORIALE (ASYMÉTRIQUE, SANS CARD)
+   ========================================================================== */
+.hero-architectural-container {
   position: relative;
   z-index: 2;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1440px;
   margin-inline: auto;
+  min-height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  padding-top: clamp(150px, 18vh, 210px);
-  padding-bottom: clamp(90px, 12vh, 130px);
-  padding-inline: clamp(24px, 5vw, 72px);
+  justify-content: flex-end;
+  padding-top: clamp(140px, 15vh, 180px);
+  padding-bottom: clamp(60px, 7vh, 88px);
+  padding-inline: clamp(24px, 5vw, 84px);
 }
 
-.hero-text-col {
+/* Sculpture Typographique Principale */
+.hero-title-sculpture {
+  width: 100%;
+  margin-bottom: clamp(20px, 2.8vh, 32px);
+}
+
+.hero-asym-title {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  max-width: 920px;
-}
-
-.hero-main-title {
-  font-size: clamp(2.5rem, 5.2vw, 4.75rem);
-  font-weight: 700;
-  line-height: 1.08;
+  font-size: clamp(2.8rem, 6.2vw, 5.4rem);
+  font-weight: 800;
+  line-height: 0.96;
   color: #ffffff;
-  margin-bottom: 24px;
   text-transform: uppercase;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+.hero-title-row {
+  display: block;
+}
+
+.hero-title-row.row-left {
+  text-align: left;
+}
+
+/* Décalage asymétrique architectural de la 3e ligne */
+.hero-title-row.row-shifted {
+  margin-left: clamp(32px, 7.5vw, 130px);
+  margin-top: 6px;
 }
 
 .text-gradient-red {
@@ -583,70 +601,82 @@ h1, h2, h3, h4, h5 {
   -webkit-text-fill-color: transparent;
 }
 
-.hero-description {
-  font-size: clamp(1.05rem, 1.35vw, 1.25rem);
-  color: rgba(255, 255, 255, 0.9);
-  line-height: 1.7;
-  max-width: 760px;
-  margin-bottom: 40px;
+/* Bloc Narratif Décalé : Description & Actions sous l'espace asymétrique */
+.hero-narrative-column {
+  margin-left: clamp(32px, 7.5vw, 130px);
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: clamp(44px, 5.5vh, 68px);
+}
+
+.hero-narrative-desc {
+  font-size: clamp(0.95rem, 1.12vw, 1.05rem);
+  color: rgba(255, 255, 255, 0.88);
+  line-height: 1.68;
+  margin-bottom: 22px;
   font-weight: 400;
 }
 
-.hero-cta-group {
+.hero-narrative-ctas {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  margin-bottom: 52px;
+  gap: 14px;
 }
 
-.hero-mini-stats {
+.btn-compact {
+  padding: 12px 22px;
+  font-size: 0.8125rem;
+}
+
+/* Ligne de Statistiques Directe (Pure typographie, aucune card) */
+.hero-direct-stats-bar {
   display: flex;
-  align-items: center;
-  gap: clamp(24px, 4vw, 44px);
-  padding: 18px clamp(24px, 3.5vw, 36px);
-  background: rgba(15, 18, 24, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.16);
-  border-radius: var(--radius-xl);
-  box-shadow: 0 16px 36px -6px rgba(0, 0, 0, 0.4);
-  width: fit-content;
-  max-width: 100%;
+  align-items: flex-end;
+  gap: clamp(24px, 4.5vw, 56px);
+  padding-top: clamp(22px, 2.8vh, 32px);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  width: 100%;
+  max-width: 960px;
 }
 
-.hero-mini-stat-item {
+.direct-stat-item {
   display: flex;
   flex-direction: column;
+  gap: 4px;
 }
 
-.stat-number {
+.direct-stat-num {
   font-family: var(--font-heading);
-  font-size: clamp(1.4rem, 2vw, 1.85rem);
+  font-size: clamp(1.6rem, 2.4vw, 2.2rem);
   font-weight: 700;
   color: #ffffff;
-  line-height: 1.1;
+  line-height: 1;
+  letter-spacing: -0.02em;
 }
 
-.stat-label {
-  font-size: 0.8rem;
-  color: rgba(255, 255, 255, 0.8);
+.direct-stat-lbl {
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.72);
   font-weight: 500;
-  margin-top: 2px;
+  line-height: 1.35;
+  white-space: nowrap;
 }
 
-.hero-mini-stat-divider {
+.direct-stat-sep {
   width: 1px;
-  height: 34px;
+  height: 38px;
   background: rgba(255, 255, 255, 0.18);
+  flex-shrink: 0;
 }
 
-/* Indicateur de Défilement (Scroll Down Indicator — Style Pilule Verre & Flèche Animée) */
+/* Indicateur de Défilement */
 .hero-scroll-indicator {
   position: absolute;
-  bottom: 28px;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 24px;
+  right: clamp(24px, 5.5vw, 84px);
   z-index: 5;
   text-decoration: none;
   transition: all var(--duration-normal) var(--ease-framer);
@@ -3202,39 +3232,57 @@ h1, h2, h3, h4, h5 {
   .framer-pill-btn::after {
     content: "Devis";
   }
-  .hero-main-title {
-    font-size: clamp(1.85rem, 8vw, 2.5rem);
-    line-height: 1.15;
+  .hero-architectural-container {
+    padding-top: 120px;
+    padding-bottom: 56px;
+    padding-inline: 18px;
   }
-  .hero-description {
+  .hero-asym-title {
+    font-size: clamp(2rem, 8.5vw, 3rem);
+    line-height: 1.02;
+  }
+  .hero-title-row.row-shifted {
+    margin-left: 14px;
+  }
+  .hero-narrative-column {
+    margin-left: 0;
+    max-width: 100%;
+    margin-bottom: 32px;
+  }
+  .hero-narrative-desc {
     font-size: 0.92rem;
     line-height: 1.58;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
   }
-  .hero-cta-group {
+  .hero-narrative-ctas {
     flex-direction: column;
     width: 100%;
-    gap: 12px;
+    gap: 10px;
   }
-  .hero-cta-group .btn-framer-primary,
-  .hero-cta-group .btn-framer-ghost {
+  .hero-narrative-ctas .btn-framer-primary,
+  .hero-narrative-ctas .btn-framer-ghost {
     width: 100%;
     justify-content: center;
   }
-  .hero-mini-stats {
+  .hero-direct-stats-bar {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    gap: 10px;
     width: 100%;
+    padding-top: 18px;
   }
-  .hero-mini-stat-divider {
+  .direct-stat-sep {
     display: none;
   }
-  .stat-number {
-    font-size: 1.25rem;
+  .direct-stat-num {
+    font-size: 1.35rem;
   }
-  .stat-label {
+  .direct-stat-lbl {
     font-size: 0.68rem;
+    white-space: normal;
+  }
+  .hero-scroll-indicator {
+    display: none;
   }
   .crimson-four-grid {
     grid-template-columns: 1fr;
