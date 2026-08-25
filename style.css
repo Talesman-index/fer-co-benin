@@ -2067,7 +2067,7 @@ h1, h2, h3, h4, h5 {
 
 .partner-logo-card {
   background: #ffffff;
-  border: 1.5px solid var(--border-light);
+  border: 1px solid var(--border-light);
   border-radius: var(--radius-xl);
   padding: 28px 20px;
   display: flex;
@@ -2075,31 +2075,14 @@ h1, h2, h3, h4, h5 {
   align-items: center;
   text-align: center;
   gap: 12px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03);
   transition: all var(--duration-normal) var(--ease-framer);
-  position: relative;
-  overflow: hidden;
-}
-
-.partner-logo-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: transparent;
-  transition: background var(--duration-normal) var(--ease-framer);
 }
 
 .partner-logo-card:hover {
-  transform: translateY(-5px);
-  border-color: rgba(222, 82, 47, 0.4);
-  box-shadow: 0 16px 36px -8px rgba(222, 82, 47, 0.2);
-}
-
-.partner-logo-card:hover::before {
-  background: var(--crimson-primary);
+  transform: translateY(-4px);
+  border-color: rgba(0, 0, 0, 0.18);
+  box-shadow: 0 14px 30px -6px rgba(0, 0, 0, 0.08);
 }
 
 .partner-img-box {
