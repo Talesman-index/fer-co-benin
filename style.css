@@ -2711,7 +2711,9 @@ h1, h2, h3, h4, h5 {
   background: var(--bg-dark);
   box-shadow: var(--shadow-dark);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-  padding: clamp(56px, 7vw, 96px) clamp(24px, 5vw, 72px);
+  padding-top: clamp(140px, 15vw, 184px);
+  padding-bottom: clamp(64px, 7vw, 96px);
+  padding-inline: clamp(24px, 5vw, 72px);
   color: #ffffff;
   display: flex;
   flex-direction: column;
