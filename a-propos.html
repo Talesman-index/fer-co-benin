@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fer . Co | À Propos — Leader de la Sidérurgie & Charpentes Métalliques au Bénin</title>
+  <meta name="description" content="Découvrez l'histoire, la vision, le bureau d'études et les engagements qualité de Fer . Co. Plus de 25 ans d'expertise métallurgique à Cotonou.">
+  
+  <!-- Google Fonts : Outfit & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Feuille de styles principale -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header Sticky Framer -->
+  <header class="framer-navbar-wrapper">
+    <nav class="framer-navbar-container">
+      <a href="index.html" class="framer-logo">
+        <div class="framer-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <span class="framer-logo-text">Fer <span>. Co</span></span>
+      </a>
+
+      <div class="framer-nav-links">
+        <a href="index.html" class="framer-nav-link">Accueil</a>
+        <a href="a-propos.html" class="framer-nav-link active">Fer . Co</a>
+        <a href="services.html" class="framer-nav-link">Services</a>
+        <a href="produits.html" class="framer-nav-link">Produits</a>
+        <a href="productions.html" class="framer-nav-link">Productions</a>
+        <a href="contact.html" class="framer-nav-link">Contact</a>
+      </div>
+
+      <div class="framer-nav-actions">
+        <button class="framer-icon-btn open-quote-modal" title="Recherche">
+          <i data-lucide="search" style="width:16px;height:16px;"></i>
+        </button>
+        <button class="framer-pill-btn open-quote-modal">
+          <span>Devis Gratuit</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </button>
+        <!-- Bouton Hamburger Mobile -->
+        <button class="framer-mobile-toggle" aria-label="Ouvrir le menu mobile">
+          <i data-lucide="menu" style="width:20px;height:20px;"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menu Drawer Mobile -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <div class="framer-mobile-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="framer-logo">
+        <div class="framer-logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <span class="framer-logo-text">Fer <span>. Co</span></span>
+      </div>
+      <button class="framer-mobile-close" id="mobileMenuClose" aria-label="Fermer le menu">
+        <i data-lucide="x" style="width:20px;height:20px;"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="mobile-nav-link"><span>Accueil</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="a-propos.html" class="mobile-nav-link active"><span>Fer . Co (À Propos)</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="services.html" class="mobile-nav-link"><span>Services Métallurgiques</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="produits.html" class="mobile-nav-link"><span>Catalogue Produits</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="productions.html" class="mobile-nav-link"><span>Atelier & Productions</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="contact.html" class="mobile-nav-link"><span>Contact & Devis</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <button class="btn-framer-primary open-quote-modal" style="width:100%;">
+        <span>DEMANDER UN DEVIS EXPRESS</span>
+      </button>
+      <a href="tel:+22999905555" class="mobile-drawer-phone">
+        <i data-lucide="phone" style="width:16px;height:16px;"></i>
+        <span>+229 99 90 55 55</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Subpage Hero — FULL WIDTH -->
+  <div class="subpage-hero-wrapper">
+    <div class="subpage-hero-card">
+      <img src="images/team-male-and-female-engineers-in-a-metal-sheet-fa-2026-03-25-00-00-18-utc.jpg" alt="Ingénieurs de Fer . Co" class="subpage-hero-bg" />
+      <div class="subpage-hero-overlay"></div>
+      <div class="subpage-hero-content">
+        <div class="breadcrumbs-row">
+          <a href="index.html">Accueil</a>
+          <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+          <span>À propos de Fer . Co</span>
+        </div>
+        <span class="section-tag-pill" style="background:rgba(255,255,255,0.2);color:#ffffff;border-color:rgba(255,255,255,0.3);">NOTRE IDENTITÉ & EXPERTISE</span>
+        <h1 class="subpage-title">Pionniers de la Métallurgie et des Charpentes d'Avenir</h1>
+        <p class="subpage-subtitle">
+          Depuis plus de 25 ans, Fer . Co s'affirme comme le partenaire industriel de référence des plus grands constructeurs au Bénin et en Afrique de l'Ouest.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <main class="page-container">
+
+    <!-- Section Histoire & Vision -->
+    <section class="framer-section">
+      <div class="about-split-layout">
+        <div class="about-media-col">
+          <div class="about-main-image-wrap">
+            <img src="images/stacked-steel-metal-bars-in-a-factory-2026-01-08-07-15-37-utc.jpg" alt="Parc d'acier Fer . Co" class="about-main-photo" />
+            <div class="about-crimson-badge">
+              <div class="crimson-badge-icon"><i data-lucide="shield-check" style="width:24px;height:24px;"></i></div>
+              <div class="crimson-badge-val">25+</div>
+              <div class="crimson-badge-txt">Années d'excellence opérationnelle et de réalisations emblématiques</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content-col">
+          <div class="section-tag-pill">NOTRE MISSION</div>
+          <h2 class="section-heading-lg">Bâtir durablement avec la force de l'acier et la rigueur de l'ingénierie</h2>
+          <p class="section-body-text">
+            Fondée avec la volonté d'élever les standards de la construction métallique en Afrique de l'Ouest, <strong>Fer . Co</strong> combine la puissance d'un atelier sidérurgique moderne à l'intelligence d'un bureau d'études intégré en modélisation 3D BIM.
+          </p>
+          <p class="section-body-text" style="margin-top:14px;">
+            Nous transformons l'acier brut en ouvrages pérennes : charpentes de hangars logistiques, complexes portuaires, bâtiments modulaires clés en main, et pièces façonnées sur mesure jusqu'à 3 mètres de longueur.
+          </p>
+
+          <div class="about-features-grid" style="margin-top:24px;">
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Parc machines CNC de dernière génération</span>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Respect rigoureux des normes Eurocodes 3</span>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Stock permanent de plus de 1 500 tonnes</span>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Livraison et assistance au levage par camion-grue</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4 Piliers Fondamentaux -->
+    <section class="framer-section no-pad-top">
+      <div class="section-header-center">
+        <div class="section-tag-pill">VALEURS & ENGAGEMENTS</div>
+        <h2 class="section-heading-lg">Les 4 Piliers qui Forgent notre Réputation</h2>
+      </div>
+
+      <div class="crimson-four-grid" style="border-radius:var(--radius-xl);overflow:hidden;box-shadow:var(--shadow-md);">
+        <div class="crimson-box-card">
+          <div class="crimson-box-index">01</div>
+          <h4 class="crimson-box-title">Précision Millimétrique</h4>
+          <p class="crimson-box-desc">
+            Nos centres de découpe et de pliage garantissent un respect scrupuleux de vos tolérances dimensionnelles.
+          </p>
+        </div>
+
+        <div class="crimson-box-card">
+          <div class="crimson-box-index">02</div>
+          <h4 class="crimson-box-title">Résistance Tropicale</h4>
+          <p class="crimson-box-desc">
+            Des traitements anticorrosion Aluzinc AZ150 et galvanisation à chaud conçus pour le climat côtier.
+          </p>
+        </div>
+
+        <div class="crimson-box-card">
+          <div class="crimson-box-index">03</div>
+          <h4 class="crimson-box-title">Réactivité 24H</h4>
+          <p class="crimson-box-desc">
+            Étude technique et chiffrage détaillés transmis sous 24 heures ouvrées pour accélérer vos chantiers.
+          </p>
+        </div>
+
+        <div class="crimson-box-card">
+          <div class="crimson-box-index">04</div>
+          <h4 class="crimson-box-title">Accompagnement Chantier</h4>
+          <p class="crimson-box-desc">
+            De la note de calcul initiale jusqu'au déchargement par grue sur votre site, nous restons à vos côtés.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Équipe & Bureau d'études -->
+    <section class="framer-section">
+      <div class="dark-highlight-card">
+        <div class="dark-highlight-content">
+          <span class="dark-tag-badge">BUREAU D'ÉTUDES INTÉGRÉ</span>
+          <h2 class="dark-card-title">Des Ingénieurs Métallurgistes Dédiés à la Réussite de Vos Plans</h2>
+          <p class="dark-card-desc">
+            Nos ingénieurs structure calculent chaque descente de charge, optimisent l'emploi de la matière pour réduire vos coûts globaux et conçoivent les plans d'exécution au format DWG/BIM.
+          </p>
+          <button class="btn-framer-primary open-quote-modal">
+            <span>SOUMETTRE VOS PLANS POUR ÉTUDE</span>
+            <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+          </button>
+        </div>
+        <div class="dark-highlight-media">
+          <img src="images/team-male-and-female-engineers-in-a-metal-sheet-fa-2026-03-25-00-00-18-utc.jpg" alt="Ingénieurs Fer . Co" />
+          <div class="dark-media-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer — FULL WIDTH -->
+  <footer class="framer-footer" id="contact">
+    <div class="footer-crimson-strip">
+      <div class="footer-crimson-strip-inner">
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="phone" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Ligne Directe</span>
+            <strong class="strip-val"><a href="tel:+22999905555">+229 99 90 55 55</a></strong>
+          </div>
+        </div>
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="mail" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Support Technique</span>
+            <strong class="strip-val"><a href="mailto:info@fer-co.com">info@fer-co.com</a></strong>
+          </div>
+        </div>
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Atelier & Usine</span>
+            <strong class="strip-val">Cotonou, République du Bénin</strong>
+          </div>
+        </div>
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="clock" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Horaires d'Ouverture</span>
+            <strong class="strip-val">Lun - Sam : 07h30 - 18h00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-main-grid-wrapper">
+      <div class="footer-main-grid">
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span>Fer <strong>. Co</strong></span>
+          </div>
+          <p class="footer-desc">
+            Leader en fabrication de charpentes métalliques, usinage numérique 3M, profilage industriel et modules préfabriqués à Cotonou et en Afrique de l'Ouest.
+          </p>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">Fer . Co (À propos)</a></li>
+            <li><a href="services.html">Services Métallurgiques</a></li>
+            <li><a href="produits.html">Catalogue Produits</a></li>
+            <li><a href="productions.html">Atelier & Productions</a></li>
+            <li><a href="contact.html">Contact & Devis</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav-col">
+          <h4 class="footer-title">Nos Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="produits.html">Poutrelles IPE / HEA / UPN</a></li>
+            <li><a href="services.html">Découpe & Pliage Numérique 3M</a></li>
+            <li><a href="productions.html">Bases-Vie & Conteneurs 20ft/40ft</a></li>
+            <li><a href="produits.html">Bacs Aluzinc AZ150 & Sandwich PUR</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4 class="footer-title">Restez Informé</h4>
+          <p style="font-size:0.875rem;color:var(--text-white-muted);margin-bottom:14px;">
+            Recevez nos fiches techniques et alertes de stock pour vos chantiers.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+            <input type="email" placeholder="Votre email..." required class="newsletter-input" />
+            <button type="submit" class="newsletter-submit-btn" aria-label="S'inscrire">
+              <i data-lucide="send" style="width:15px;height:15px;"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom-bar-wrapper">
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-copy">
+          © 2026 <strong>Fer . Co</strong>. Tous droits réservés. Fabrication & Construction Métallique.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="a-propos.html">Mentions Légales</a>
+          <a href="a-propos.html">Politique de Confidentialité</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modale de Devis -->
+  <div class="modal-overlay" id="quoteModalOverlay">
+    <div class="modal-window framer-glass-modal">
+      <button class="modal-close-btn close-quote-modal" aria-label="Fermer">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+
+      <div class="modal-header-block">
+        <span class="modal-tag">ÉTUDE TECHNIQUE SOUS 24H</span>
+        <h3 class="modal-title">Demande de Devis Personnalisé</h3>
+        <p class="modal-subtitle">
+          Notre bureau d'études analyse vos spécifications et vous transmet une offre chiffrée sous 24h ouvrées.
+        </p>
+      </div>
+
+      <form id="quoteModalForm" class="framer-quote-form">
+        <div class="form-group">
+          <label class="form-label" for="quoteDomain">Domaine principal de votre besoin *</label>
+          <select id="quoteDomain" class="form-select">
+            <option value="Charpentes Métalliques & Poutrelles">01. Charpentes Métalliques & Poutrelles (IPE, HEA)</option>
+            <option value="Découpe & Pliage Numérique 3M">02. Découpe Numérique, Cisaillage & Pliage 3M</option>
+            <option value="Bâtiments Modulaires & Conteneurs">03. Conteneurs Aménagés & Bases-Vie</option>
+            <option value="Tôles Aluzinc & Panneaux Sandwichs">04. Bacs Aluzinc AZ150 & Panneaux Sandwichs</option>
+          </select>
+        </div>
+
+        <div class="form-row-pair">
+          <div class="form-group">
+            <label class="form-label" for="quoteName">Nom / Entreprise *</label>
+            <input type="text" id="quoteName" class="form-input" placeholder="Ex: Jean Dossou" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quotePhone">Téléphone / WhatsApp *</label>
+            <input type="tel" id="quotePhone" class="form-input" placeholder="+229 ..." required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quoteDetails">Précisions & Dimensions du projet *</label>
+          <textarea id="quoteDetails" class="form-textarea" rows="3" placeholder="Dimensions, profilés, lieu de livraison..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-framer-primary" style="width:100%;margin-top:8px;">
+          <span>ENVOYER MA DEMANDE DE DEVIS</span>
+          <i data-lucide="send" style="width:16px;height:16px;"></i>
+        </button>
+
+        <div id="quoteModalSuccess" class="modal-success-alert">
+          Merci ! Votre demande a été transmise à notre bureau d'études.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Widget Agent de Chat Technique Fer . Co -->
+  <button class="chat-agent-trigger" id="chatAgentTrigger" aria-label="Discuter avec le conseiller technique">
+    <div class="chat-trigger-avatar">
+      <i data-lucide="message-square" style="width:17px;height:17px;"></i>
+      <span class="chat-online-badge"></span>
+    </div>
+    <div class="chat-trigger-text">
+      <span class="chat-trigger-title">Conseiller Fer . Co</span>
+      <span class="chat-trigger-sub">Discuter en direct</span>
+    </div>
+  </button>
+
+  <!-- Fenêtre Popup de Discussion avec l'Agent -->
+  <div class="chat-agent-modal" id="chatAgentModal">
+    <div class="chat-modal-header">
+      <div class="chat-header-info">
+        <div class="chat-header-avatar">
+          <i data-lucide="message-square" style="width:18px;height:18px;"></i>
+        </div>
+        <div>
+          <div class="chat-header-title">Assistant Technique Fer . Co</div>
+          <div class="chat-header-status">
+            <span class="pulse-dot" style="width:6px;height:6px;"></span>
+            <span>Conseiller sidérurgique en direct</span>
+          </div>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chatCloseBtn" aria-label="Fermer le chat">
+        <i data-lucide="x" style="width:16px;height:16px;"></i>
+      </button>
+    </div>
+
+    <div class="chat-modal-body" id="chatModalBody">
+      <div class="chat-msg bot">
+        Bonjour. Je suis le conseiller technique de <strong>Fer . Co</strong>.
+        Comment pouvons-nous vous accompagner sur votre chantier aujourd'hui ?
+      </div>
+      <div class="chat-quick-chips">
+        <button class="chat-chip">Devis Hangar & Charpente</button>
+        <button class="chat-chip">Tôles Aluzinc & Sandwich</button>
+        <button class="chat-chip">Pliage Numérique 3M</button>
+        <button class="chat-chip">Tarifs & Délais</button>
+        <button class="chat-chip">Coordonnées Usine</button>
+      </div>
+    </div>
+
+    <div class="chat-modal-footer">
+      <form class="chat-input-form" id="chatInputForm">
+        <input type="text" id="chatInputField" class="chat-input-field" placeholder="Posez une question technique..." autocomplete="off" />
+        <button type="submit" class="chat-send-btn" aria-label="Envoyer">
+          <i data-lucide="send" style="width:16px;height:16px;"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

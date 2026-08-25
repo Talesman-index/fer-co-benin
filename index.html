@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FER CO | Sidérurgie, Charpentes Métalliques & Découpe Numérique</title>
+  <meta name="description" content="FER CO : Leader en fabrication de charpentes métalliques, usinage & pliage CNC 3M, profilés, bacs Aluzinc et conteneurs modulaires à Cotonou, Bénin.">
+  
+  <!-- Google Fonts : Plus Jakarta Sans (Corps) & Outfit (Titres) — Typographie épurée, moderne et équilibrée -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Feuille de styles principale -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. TOP HEADER / NAVBAR (STICKY VERRE DÉPOLI & STYLE FRAMER)
+       ========================================================================== -->
+  <header class="framer-navbar-wrapper">
+    <nav class="framer-navbar-container">
+      <!-- Logo de la marque -->
+      <a href="index.html" class="framer-logo">
+        <div class="framer-logo-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <span class="framer-logo-text">Fer <span>. Co</span></span>
+      </a>
+
+      <!-- Liens de navigation bureau -->
+      <div class="framer-nav-links">
+        <a href="index.html" class="framer-nav-link active">Accueil</a>
+        <a href="a-propos.html" class="framer-nav-link">Fer . Co</a>
+        <a href="services.html" class="framer-nav-link">Services</a>
+        <a href="produits.html" class="framer-nav-link">Produits</a>
+        <a href="productions.html" class="framer-nav-link">Productions</a>
+        <a href="contact.html" class="framer-nav-link">Contact</a>
+      </div>
+
+      <!-- Actions rapides -->
+      <div class="framer-nav-actions">
+        <button class="framer-icon-btn open-quote-modal" title="Rechercher ou configurer un devis" aria-label="Recherche">
+          <i data-lucide="search" style="width:16px;height:16px;"></i>
+        </button>
+        <button class="framer-pill-btn open-quote-modal">
+          <span>Devis Gratuit</span>
+          <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+        </button>
+        <!-- Bouton Hamburger Mobile -->
+        <button class="framer-mobile-toggle" aria-label="Ouvrir le menu mobile">
+          <i data-lucide="menu" style="width:20px;height:20px;"></i>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Menu Drawer Mobile -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay"></div>
+  <div class="framer-mobile-drawer" id="mobileNavDrawer">
+    <div class="mobile-drawer-header">
+      <div class="framer-logo">
+        <div class="framer-logo-icon">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+            <line x1="3" y1="6" x2="21" y2="6"/>
+            <path d="M16 10a4 4 0 0 1-8 0"/>
+          </svg>
+        </div>
+        <span class="framer-logo-text">Fer <span>. Co</span></span>
+      </div>
+      <button class="framer-mobile-close" id="mobileMenuClose" aria-label="Fermer le menu">
+        <i data-lucide="x" style="width:20px;height:20px;"></i>
+      </button>
+    </div>
+
+    <div class="mobile-drawer-links">
+      <a href="index.html" class="mobile-nav-link active"><span>Accueil</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="a-propos.html" class="mobile-nav-link"><span>Fer . Co (À Propos)</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="services.html" class="mobile-nav-link"><span>Services Métallurgiques</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="produits.html" class="mobile-nav-link"><span>Catalogue Produits</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="productions.html" class="mobile-nav-link"><span>Atelier & Productions</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+      <a href="contact.html" class="mobile-nav-link"><span>Contact & Devis</span><i data-lucide="chevron-right" style="width:16px;height:16px;"></i></a>
+    </div>
+
+    <div class="mobile-drawer-footer">
+      <button class="btn-framer-primary open-quote-modal" style="width:100%;">
+        <span>DEMANDER UN DEVIS EXPRESS</span>
+      </button>
+      <a href="tel:+22999905555" class="mobile-drawer-phone">
+        <i data-lucide="phone" style="width:16px;height:16px;"></i>
+        <span>+229 99 90 55 55</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       2. SECTION HERO IMMERSIVE (FULL-HEIGHT & BACKGROUND COUVRANT)
+       ========================================================================== -->
+  <section class="hero-framer-section" id="home">
+    <div class="hero-framer-card">
+      <!-- Arrière-plan & Visuel Atelier Immersif -->
+      <div class="hero-bg-media">
+        <img src="images/hero-worker-orange.jpg" alt="Atelier de fabrication d'acier lourd Fer . Co" />
+        <div class="hero-gradient-overlay"></div>
+        <div class="hero-vignette-overlay"></div>
+        <div class="hero-mesh-grid"></div>
+      </div>
+
+      <div class="hero-grid-content">
+        <!-- Typographie Principale Hero -->
+        <div class="hero-text-col">
+          <h1 class="hero-main-title">
+            EXCELLENCE SIDÉRURGIQUE<br>
+            <span class="text-gradient-red">& HAUTE PRÉCISION</span>
+          </h1>
+
+          <p class="hero-description">
+            Ingénierie de pointe, fabrication de charpentes métalliques lourdes, découpe numérique 3M et approvisionnement industriel pour vos projets de construction au Bénin et en Afrique de l'Ouest.
+          </p>
+
+          <div class="hero-cta-group">
+            <button class="btn-framer-primary open-quote-modal">
+              <span>NOS PRESTATIONS</span>
+              <span class="btn-arrow-circle">
+                <i data-lucide="arrow-up-right" style="width:15px;height:15px;"></i>
+              </span>
+            </button>
+
+            <a href="#about" class="btn-framer-ghost">
+              <i data-lucide="play" style="width:14px;height:14px;fill:currentColor;"></i>
+              <span>VISITE DE L'ATELIER</span>
+            </a>
+          </div>
+
+          <!-- Barre de mini-statistiques dans le hero -->
+          <div class="hero-mini-stats">
+            <div class="hero-mini-stat-item">
+              <span class="stat-number count-up-stat" data-target="25" data-suffix="+ Ans">25+ Ans</span>
+              <span class="stat-label">D'expérience cumulée</span>
+            </div>
+            <div class="hero-mini-stat-divider"></div>
+            <div class="hero-mini-stat-item">
+              <span class="stat-number count-up-stat" data-target="1500" data-suffix="+">1 500+</span>
+              <span class="stat-label">Chantiers approvisionnés</span>
+            </div>
+            <div class="hero-mini-stat-divider"></div>
+            <div class="hero-mini-stat-item">
+              <span class="stat-number count-up-stat" data-target="100" data-suffix="%">100%</span>
+              <span class="stat-label">Aciers certifiés ISO & Eurocodes</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Colonne Visuelle Droite : Cartes Flottantes Arrondies -->
+        <div class="hero-visual-col">
+          <div class="floating-cards-cluster" id="heroCardsCluster">
+            <!-- Carte 1 : Barres & Profilés -->
+            <div class="hero-floating-card card-top-right open-quote-modal" data-parallax-speed="0.18">
+              <img src="images/stacked-steel-metal-bars-in-a-factory-2026-01-08-07-15-37-utc.jpg" alt="Tubes et profilés métalliques" />
+              <div class="card-glass-tag">
+                <i data-lucide="layers" style="width:14px;height:14px;"></i>
+                <span>Tubes & Profilés S275</span>
+              </div>
+            </div>
+
+            <!-- Carte 2 : Usinage de précision -->
+            <div class="hero-floating-card card-center open-quote-modal" data-parallax-speed="0.09">
+              <img src="images/hero-machinist-lathe.jpg" alt="Découpe et pliage de précision" />
+              <div class="card-glass-tag">
+                <i data-lucide="cpu" style="width:14px;height:14px;"></i>
+                <span>Pliage Numérique 3M</span>
+              </div>
+            </div>
+
+            <!-- Carte 3 : Montage & Sécurité -->
+            <div class="hero-floating-card card-bottom-right open-quote-modal" data-parallax-speed="0.25">
+              <img src="images/metal-frames-being-constructed-on-a-building-site-2026-03-27-01-30-54-utc.JPG" alt="Chantier de charpente métallique" />
+              <div class="card-glass-tag">
+                <i data-lucide="shield-check" style="width:14px;height:14px;"></i>
+                <span>Normes Eurocodes 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Indicateur de défilement immersif et moderne -->
+      <a href="#about" class="hero-scroll-indicator" aria-label="Découvrir l'Atelier et les réalisations">
+        <div class="scroll-indicator-pill">
+          <span class="scroll-pulse-dot"></span>
+          <span class="scroll-text">DÉCOUVRIR L'ATELIER</span>
+          <span class="scroll-arrow-circle">
+            <i data-lucide="arrow-down" style="width:13px;height:13px;"></i>
+          </span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <main class="page-container">
+
+    <!-- ==========================================================================
+         3. SECTION À PROPOS (EXPERTISE SIDÉRURGIQUE DEPUIS 25 ANS)
+         ========================================================================== -->
+    <section class="framer-section" id="about">
+      <div class="about-split-layout">
+        <!-- Gauche : Photo avec badge flottant couleur #de522f -->
+        <div class="about-media-col">
+          <div class="about-main-image-wrap">
+            <img src="images/stacked-steel-metal-bars-in-a-factory-2026-01-08-07-15-37-utc.jpg" alt="Atelier de découpe FER CO" class="about-main-photo" />
+            
+            <!-- Badge superposé -->
+            <div class="about-crimson-badge">
+              <div class="crimson-badge-icon">
+                <i data-lucide="award" style="width:24px;height:24px;"></i>
+              </div>
+              <div class="crimson-badge-val">25+</div>
+              <div class="crimson-badge-txt">Années d'excellence en métallurgie & construction métallique</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Droite : Contenu -->
+        <div class="about-content-col">
+          <div class="section-tag-pill">À PROPOS DE NOTRE ENTREPRISE</div>
+          <h2 class="section-heading-lg">
+            Fournisseur de référence en aciers et charpentes pour les chantiers d'envergure
+          </h2>
+          <p class="section-body-text">
+            Dotée d'un parc industriel moderne et de centres d'usinage numérique de pointe, FER CO conçoit et transforme l'acier selon les normes internationales les plus exigeantes.
+          </p>
+          <p class="section-body-text" style="margin-top:12px;">
+            Des hangars logistiques portuaires aux bâtiments modulaires isolés et passerelles industrielles, notre bureau d'études garantit la précision des assemblages, la résistance des structures et le respect strict des délais de livraison.
+          </p>
+
+          <!-- Grille des atouts -->
+          <div class="about-features-grid">
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Aciers de construction certifiés S275 & S355</span>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Découpe plasma & pliage numérique jusqu'à 3m</span>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Conformité Eurocodes et garantie structurelle</span>
+            </div>
+            <div class="about-feature-item">
+              <div class="feature-check-icon"><i data-lucide="check" style="width:16px;height:16px;"></i></div>
+              <span>Logistique lourde & grutage sur vos chantiers</span>
+            </div>
+          </div>
+
+          <!-- Bouton vidéo et citation -->
+          <div class="about-action-row">
+            <button class="video-play-pill open-quote-modal">
+              <div class="video-icon-circle">
+                <i data-lucide="play" style="width:14px;height:14px;fill:currentColor;"></i>
+              </div>
+              <span>Voir la vidéo de notre atelier</span>
+            </button>
+
+            <div class="about-quote-box">
+              <div class="quote-text">« La rigueur dans chaque coupe, la solidité dans chaque structure. »</div>
+              <div class="quote-author">Direction Technique & Ingénierie des Structures</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         4. BANNIÈRE BOBINES D'ACIER & 4 COLONNES COULEUR #de522f
+         ========================================================================== -->
+    <section class="framer-section no-pad-top">
+      <div class="crimson-feature-banner-wrapper">
+        <!-- Visuel de la bannière -->
+        <div class="crimson-banner-img-wrap">
+          <img src="images/urban-geometry-the-squares-and-rectangle-shapes-o-2026-07-15-21-36-29-utc.jpg" alt="Bobines d'acier et tôles laminées" />
+          <div class="banner-photo-overlay"></div>
+          <div class="banner-center-title">
+            <span>PERFORMANCE & INGÉNIERIE</span>
+            <h3>POURQUOI CHOISIR LES SOLUTIONS FER CO</h3>
+          </div>
+        </div>
+
+        <!-- 4 Boîtes thématiques #de522f -->
+        <div class="crimson-four-grid">
+          <!-- Col 1 -->
+          <div class="crimson-box-card">
+            <div class="crimson-box-index">01</div>
+            <h4 class="crimson-box-title">Équipements Modernes</h4>
+            <p class="crimson-box-desc">
+              Plieuses numériques CNC 3 mètres, cisailles guillotines et postes de soudage semi-automatiques certifiés.
+            </p>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="crimson-box-card">
+            <div class="crimson-box-index">02</div>
+            <h4 class="crimson-box-title">Aciers Certifiés</h4>
+            <p class="crimson-box-desc">
+              Poutrelles normalisées, bacs Aluzinc AZ150 anticorrosion et panneaux sandwichs PUR haute isolation thermique.
+            </p>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="crimson-box-card">
+            <div class="crimson-box-index">03</div>
+            <h4 class="crimson-box-title">Logistique Fiable</h4>
+            <p class="crimson-box-desc">
+              Flotte dédiée de camions plateaux et camions-grues pour un approvisionnement continu de vos chantiers.
+            </p>
+          </div>
+
+          <!-- Col 4 -->
+          <div class="crimson-box-card">
+            <div class="crimson-box-index">04</div>
+            <h4 class="crimson-box-title">Ingénieurs Experts</h4>
+            <p class="crimson-box-desc">
+              Bureau d'études intégré réalisant vos modélisations 3D, calculs de descente de charge et plans d'exécution.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         5. SECTION CAPACITÉS & STATISTIQUES
+         ========================================================================== -->
+    <section class="framer-section" id="capacites">
+      <div class="capabilities-split-layout">
+        <!-- Gauche : Photo avec badge de garantie -->
+        <div class="capabilities-media-col">
+          <div class="cap-image-container">
+            <img src="images/stacked-steel-metal-bars-in-a-factory-2026-01-08-07-15-37-utc.jpg" alt="Aciers et platines d'assemblage" class="cap-main-photo" />
+            <div class="cap-floating-badge">
+              <div class="cap-badge-icon"><i data-lucide="shield-check" style="width:20px;height:20px;"></i></div>
+              <div class="cap-badge-title">Qualité 100%</div>
+              <div class="cap-badge-sub">Traçabilité Métallurgique</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Droite : Chiffres clés & Appel à l'action -->
+        <div class="capabilities-content-col">
+          <div class="section-tag-pill">CAPACITÉS & NORMES</div>
+          <h2 class="section-heading-lg">
+            Technologie de pointe et contrôle rigoureux sur chaque tonne usinée
+          </h2>
+          <p class="section-body-text">
+            Notre site de production intègre des processus d'usinage optimisés et des contrôles dimensionnels stricts afin d'assurer un niveau de finition irréprochable.
+          </p>
+
+          <!-- 3 Grands Compteurs -->
+          <div class="capabilities-stats-row">
+            <div class="cap-stat-card">
+              <div class="cap-stat-number">25+</div>
+              <div class="cap-stat-label">Années d'expérience industrielle</div>
+            </div>
+            <div class="cap-stat-card">
+              <div class="cap-stat-number">1 500+</div>
+              <div class="cap-stat-label">Structures et chantiers livrés</div>
+            </div>
+            <div class="cap-stat-card">
+              <div class="cap-stat-number">99,8%</div>
+              <div class="cap-stat-label">Conformité et précision d'usinage</div>
+            </div>
+          </div>
+
+          <!-- Bandeau d'action -->
+          <div class="cap-cta-strip">
+            <div class="cap-cta-text">
+              <strong>Vous avez un devis ou des plans spécifiques ?</strong>
+              <span>Notre bureau d'études étudie vos bordereaux techniques sous 24 heures.</span>
+            </div>
+            <div class="cap-cta-buttons">
+              <button class="btn-framer-primary btn-sm open-quote-modal">Demander une étude</button>
+              <button class="btn-framer-outline btn-sm open-quote-modal">Fiches Techniques</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         6. BANDEAU ARCHITECTURAL MÉTALLIQUE
+         ========================================================================== -->
+    <section class="framer-section no-pad-block">
+      <div class="beams-strip-card">
+        <div class="beams-strip-media">
+          <img src="images/metal-frames-being-constructed-on-a-building-site-2026-03-27-01-30-54-utc.JPG" alt="Ossature métallique en cours de montage" />
+          <div class="beams-strip-gradient"></div>
+        </div>
+        <div class="beams-strip-content">
+          <span class="beams-tag">STRUCTURES ROBUSTES</span>
+          <h3>Calculées pour résister aux charges lourdes et aux climats côtiers</h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         7. NOS SERVICES (6 CARTES FRAMER MODERNES)
+         ========================================================================== -->
+    <section class="framer-section" id="services">
+      <div class="section-header-center">
+        <div class="section-tag-pill">NOTRE EXPERTISE SIDÉRURGIQUE</div>
+        <h2 class="section-heading-lg">Nos Solutions & Prestations Industrielles</h2>
+        <p class="section-body-text">
+          Transformation métallurgique complète, préfabrication modulaire et fourniture de profilés métalliques conformes à vos plans d'ingénierie.
+        </p>
+      </div>
+
+      <div class="services-six-grid">
+        <!-- Carte 1 -->
+        <div class="service-framer-card open-quote-modal">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <i data-lucide="layers" style="width:24px;height:24px;"></i>
+            </div>
+            <span class="service-number">01</span>
+          </div>
+          <h3 class="service-card-title">Charpentes & Hangars Métalliques</h3>
+          <p class="service-card-desc">
+            Fabrication de poutrelles IPE/HEA, fermes triangulées, portiques d'entrepôts et charpentes industrielles sans poteau intermédiaire.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-read-more">
+              <span>En savoir plus</span>
+              <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="service-framer-card open-quote-modal">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <i data-lucide="scissors" style="width:24px;height:24px;"></i>
+            </div>
+            <span class="service-number">02</span>
+          </div>
+          <h3 class="service-card-title">Découpe & Pliage Numérique 3M</h3>
+          <p class="service-card-desc">
+            Pliage CNC jusqu'à 3 mètres et 8mm d'épaisseur, cisaillage guillotine, perçage et façonnage sur mesure de tôles et rives.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-read-more">
+              <span>En savoir plus</span>
+              <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="service-framer-card open-quote-modal">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <i data-lucide="cpu" style="width:24px;height:24px;"></i>
+            </div>
+            <span class="service-number">03</span>
+          </div>
+          <h3 class="service-card-title">Serrurerie & Ouvrages Métalliques</h3>
+          <p class="service-card-desc">
+            Escaliers industriels, passerelles métalliques, garde-corps normés, platines d'ancrage et grilles de sécurité sur mesure.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-read-more">
+              <span>En savoir plus</span>
+              <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="service-framer-card open-quote-modal">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <i data-lucide="box" style="width:24px;height:24px;"></i>
+            </div>
+            <span class="service-number">04</span>
+          </div>
+          <h3 class="service-card-title">Bâtiments Modulaires & Conteneurs</h3>
+          <p class="service-card-desc">
+            Aménagement de conteneurs maritimes 20ft et 40ft en bureaux de chantier, modules sanitaires autonomes et bases-vie isolées.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-read-more">
+              <span>En savoir plus</span>
+              <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte 5 -->
+        <div class="service-framer-card open-quote-modal">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <i data-lucide="cylinder" style="width:24px;height:24px;"></i>
+            </div>
+            <span class="service-number">05</span>
+          </div>
+          <h3 class="service-card-title">Tubes, Profilés & Bacs Aluzinc</h3>
+          <p class="service-card-desc">
+            Stock permanent de tubes carrés, rectangulaires et ronds, bacs de toiture Aluzinc AZ150 et panneaux sandwichs PUR.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-read-more">
+              <span>En savoir plus</span>
+              <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            </span>
+          </div>
+        </div>
+
+        <!-- Carte 6 -->
+        <div class="service-framer-card open-quote-modal">
+          <div class="service-card-top">
+            <div class="service-icon-box">
+              <i data-lucide="shield" style="width:24px;height:24px;"></i>
+            </div>
+            <span class="service-number">06</span>
+          </div>
+          <h3 class="service-card-title">Traitement de Surface & Galvanisation</h3>
+          <p class="service-card-desc">
+            Sablage industriel, galvanisation à chaud, primaires antirouille riches en zinc et peinture époxy haute résistance maritime.
+          </p>
+          <div class="service-card-footer">
+            <span class="service-read-more">
+              <span>En savoir plus</span>
+              <i data-lucide="chevron-right" style="width:14px;height:14px;"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         8. BANNIÈRE CARBONE SOMBRE (MEILLEURE QUALITÉ D'ACIER)
+         ========================================================================== -->
+    <section class="framer-section">
+      <div class="dark-highlight-card">
+        <div class="dark-highlight-content">
+          <span class="dark-tag-badge">QUALITÉ SIDÉRURGIQUE CERTIFIÉE</span>
+          <h2 class="dark-card-title">
+            La meilleure qualité d'acier brut et façonné pour tous vos chantiers
+          </h2>
+          <p class="dark-card-desc">
+            Approvisionnement direct d'usine avec certificats métallurgiques, haute limite d'élasticité et tolérance millimétrique. De la pièce unitaire sur mesure aux charpentes industrielles de plus de 500 tonnes.
+          </p>
+          <div class="dark-card-actions">
+            <button class="btn-framer-primary open-quote-modal">
+              <span>EXPLORER LE CATALOGUE</span>
+              <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+            </button>
+            <a href="tel:+22999905555" class="dark-phone-link">
+              <i data-lucide="phone-call" style="width:16px;height:16px;"></i>
+              <span>+229 99 90 55 55</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="dark-highlight-media">
+          <img src="images/workers-building-metal-structure-on-construction-s-2026-07-15-21-33-46-utc.jpg" alt="Montage d'acier et ouvriers qualifiés" />
+          <div class="dark-media-overlay"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         9. SPÉCIFICATIONS DES MATÉRIAUX & NORMES
+         ========================================================================== -->
+    <section class="framer-section">
+      <div class="material-split-layout">
+        <!-- Gauche : Image avec badge superposé -->
+        <div class="material-media-col">
+          <div class="material-image-container">
+            <img src="images/metal-frames-being-constructed-on-a-building-site-2026-03-27-01-30-54-utc.JPG" alt="Contrôle qualité des charpentes" class="mat-main-photo" />
+            <div class="material-overlapping-badge">
+              <i data-lucide="check-circle-2" style="width:22px;height:22px;"></i>
+              <div>
+                <strong>CERTIFIÉ NORMES ISO & SNI</strong>
+                <span>Aciers de construction Grade A</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Droite : Liste des atouts techniques -->
+        <div class="material-content-col">
+          <div class="section-tag-pill">SPÉCIFICATIONS TECHNIQUES</div>
+          <h2 class="section-heading-lg">
+            Aciers haute résistance et usinage calibré pour une longévité maximale
+          </h2>
+          <p class="section-body-text">
+            Chaque lot d'acier est testé pour garantir une tenue irréprochable face aux charges dynamiques, aux contraintes de vent et à la corrosion saline.
+          </p>
+
+          <div class="material-spec-list">
+            <div class="material-spec-row">
+              <div class="spec-bullet-icon"><i data-lucide="shield-check" style="width:18px;height:18px;"></i></div>
+              <div>
+                <strong>Nuances d'Acier Structurel S275 / S355</strong>
+                <p>Idéal pour les grandes portées libres sans appui intermédiaire et les bâtiments industriels lourds.</p>
+              </div>
+            </div>
+
+            <div class="material-spec-row">
+              <div class="spec-bullet-icon"><i data-lucide="wind" style="width:18px;height:18px;"></i></div>
+              <div>
+                <strong>Revêtement Anticorrosion Aluzinc AZ150</strong>
+                <p>Protection atmosphérique active conçue pour le climat tropical humide et maritime du littoral.</p>
+              </div>
+            </div>
+
+            <div class="material-spec-row">
+              <div class="spec-bullet-icon"><i data-lucide="truck" style="width:18px;height:18px;"></i></div>
+              <div>
+                <strong>Pré-perçage et Assemblage Express sur Chantier</strong>
+                <p>Platines usinées avec précision et pièces numérotées pour un levage et boulonnage rapide.</p>
+              </div>
+            </div>
+          </div>
+
+          <button class="btn-framer-primary open-quote-modal" style="margin-top:24px;">
+            <span>TÉLÉCHARGER LE CATALOGUE TECHNIQUE</span>
+            <i data-lucide="file-text" style="width:15px;height:15px;"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         10. GALERIE & SHOWCASE ATELIER (4 COLONNES ARRONDIES)
+         ========================================================================== -->
+    <section class="framer-section" id="realisations">
+      <div class="section-header-center">
+        <div class="section-tag-pill">GALERIE DE NOS RÉALISATIONS</div>
+        <h2 class="section-heading-lg">Notre Atelier en Action & Chantiers Réalisés</h2>
+        <p class="section-body-text">
+          Découvrez nos opérations quotidiennes de transformation, nos machines numériques et nos chantiers d'envergure.
+        </p>
+      </div>
+
+      <div class="gallery-four-columns">
+        <!-- Col 1 -->
+        <div class="gallery-col-card open-quote-modal">
+          <img src="images/stacked-steel-metal-bars-in-a-factory-2026-01-08-07-15-37-utc.jpg" alt="Tubes et profilés métalliques" />
+          <div class="gallery-col-overlay">
+            <span class="gallery-pill">Matières Premières</span>
+            <h4 class="gallery-title">Tubes Structurels & Poutrelles</h4>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="gallery-col-card open-quote-modal">
+          <img src="images/hero-machinist-lathe.jpg" alt="Tournage et fraisage numérique" />
+          <div class="gallery-col-overlay">
+            <span class="gallery-pill">Usinage Numérique</span>
+            <h4 class="gallery-title">Découpe et Fraisage de Précision</h4>
+          </div>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="gallery-col-card open-quote-modal">
+          <img src="images/team-male-and-female-engineers-in-a-metal-sheet-fa-2026-03-25-00-00-18-utc.jpg" alt="Ingénieurs contrôle qualité" />
+          <div class="gallery-col-overlay">
+            <span class="gallery-pill">Contrôle Qualité</span>
+            <h4 class="gallery-title">Bureau d'Études & Ingénierie</h4>
+          </div>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="gallery-col-card open-quote-modal">
+          <img src="images/building-under-construction-2026-03-10-02-08-51-utc.jpg" alt="Montage modulaire sur site" />
+          <div class="gallery-col-overlay">
+            <span class="gallery-pill">Montage Chantier</span>
+            <h4 class="gallery-title">Bases-Vie & Bâtiments Modulaires</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         11. TÉMOIGNAGE CLIENT & SPOTLIGHT VIDÉO
+         ========================================================================== -->
+    <section class="framer-section">
+      <div class="testimonial-spotlight-card">
+        <div class="spotlight-tag-pill">TÉMOIGNAGES DE NOS PARTENAIRES</div>
+        
+        <!-- Bouton lecture avec halo couleur #de522f -->
+        <div class="spotlight-play-btn open-quote-modal" title="Regarder le témoignage vidéo">
+          <div class="spotlight-pulse-ring"></div>
+          <i data-lucide="play" style="width:20px;height:20px;fill:#ffffff;color:#ffffff;"></i>
+        </div>
+
+        <div class="star-rating-row">
+          <i data-lucide="star" class="star-filled"></i>
+          <i data-lucide="star" class="star-filled"></i>
+          <i data-lucide="star" class="star-filled"></i>
+          <i data-lucide="star" class="star-filled"></i>
+          <i data-lucide="star" class="star-filled"></i>
+        </div>
+
+        <blockquote class="spotlight-quote">
+          « FER CO a fourni plus de 600 tonnes de charpentes métalliques pour notre complexe logistique portuaire. La précision des usinages, le respect scrupuleux des délais et la qualité des notes de calcul en ont fait notre partenaire privilégié. »
+        </blockquote>
+
+        <div class="spotlight-client-meta">
+          <img src="images/construction-worker-overseeing-a-crane-operation-o-2026-03-25-00-00-49-utc.jpg" alt="Ingénieur en chef des travaux" class="client-avatar-img" />
+          <div>
+            <div class="client-name">Koffi Mensah</div>
+            <div class="client-role">Ingénieur Principal des Structures • Groupe BTP Afrique</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         12. SECTION FAQ (QUESTIONS FRÉQUENTES & ACCORDÉONS)
+         ========================================================================== -->
+    <section class="framer-section" id="faq">
+      <div class="faq-split-layout">
+        <!-- Gauche : Titre et boîte de transmission de plans -->
+        <div class="faq-info-col">
+          <div class="section-tag-pill">QUESTIONS FRÉQUENTES</div>
+          <h2 class="section-heading-lg">Foire Aux Questions</h2>
+          <p class="section-body-text">
+            Retrouvez les réponses à vos interrogations sur nos nuances d'acier, nos délais d'usinage, nos plans BIM et nos modalités de livraison.
+          </p>
+
+          <div class="faq-contact-card">
+            <div class="faq-contact-icon">
+              <i data-lucide="help-circle" style="width:24px;height:24px;"></i>
+            </div>
+            <div>
+              <h4 style="font-size:1.05rem;color:var(--text-dark-primary);margin-bottom:4px;">Vous avez des plans DWG ou PDF ?</h4>
+              <p style="font-size:0.875rem;color:var(--text-dark-secondary);margin-bottom:12px;">
+                Transmettez vos métrés directement à nos ingénieurs pour un chiffrage rapide et optimisé.
+              </p>
+              <button class="btn-framer-primary btn-sm open-quote-modal">Consulter un ingénieur</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Droite : Accordéons interactifs -->
+        <div class="faq-accordion-col">
+          <!-- Accordéon 1 -->
+          <div class="faq-accordion-item active">
+            <button class="faq-question-btn" aria-expanded="true">
+              <span class="faq-question-text">Quelles sont les nuances d'acier et les normes proposées ?</span>
+              <span class="faq-toggle-icon">
+                <i data-lucide="minus" style="width:16px;height:16px;"></i>
+              </span>
+            </button>
+            <div class="faq-answer-content">
+              <p>Nous fournissons des aciers normalisés de construction S235JR, S275JR et S355JR conformes aux normes européennes EN 10025, ainsi que des tôles ondulées traitées Aluzinc AZ150 et des poutrelles IPE, HEA et UPN.</p>
+            </div>
+          </div>
+
+          <!-- Accordéon 2 -->
+          <div class="faq-accordion-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">Quelles sont vos capacités maximales de pliage et découpe CNC ?</span>
+              <span class="faq-toggle-icon">
+                <i data-lucide="plus" style="width:16px;height:16px;"></i>
+              </span>
+            </button>
+            <div class="faq-answer-content">
+              <p>Notre atelier est équipé de presses plieuses numériques jusqu'à 3 mètres pour des épaisseurs jusqu'à 8 mm, et de cisailles guillotines permettant des découpes nettes avec une précision au dixième de millimètre.</p>
+            </div>
+          </div>
+
+          <!-- Accordéon 3 -->
+          <div class="faq-accordion-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">Pouvez-vous fabriquer des conteneurs modulaires et hangars sur mesure ?</span>
+              <span class="faq-toggle-icon">
+                <i data-lucide="plus" style="width:16px;height:16px;"></i>
+              </span>
+            </button>
+            <div class="faq-answer-content">
+              <p>Oui, nous réalisons des modules de chantier 20ft et 40ft (bureaux, dortoirs, sanitaires prêts à brancher) ainsi que des hangars à grande portée libre jusqu'à 40 mètres sans poteau intermédiaire.</p>
+            </div>
+          </div>
+
+          <!-- Accordéon 4 -->
+          <div class="faq-accordion-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">Quel est le délai pour obtenir un devis technique chiffré ?</span>
+              <span class="faq-toggle-icon">
+                <i data-lucide="plus" style="width:16px;height:16px;"></i>
+              </span>
+            </button>
+            <div class="faq-answer-content">
+              <p>Notre bureau d'études vous transmet une offre détaillée avec bordereau quantitatif, métrés et délais de fabrication sous 24 heures ouvrées après réception de votre cahier des charges.</p>
+            </div>
+          </div>
+
+          <!-- Accordéon 5 -->
+          <div class="faq-accordion-item">
+            <button class="faq-question-btn" aria-expanded="false">
+              <span class="faq-question-text">Assurez-vous la livraison, le transport par grue et le montage sur site ?</span>
+              <span class="faq-toggle-icon">
+                <i data-lucide="plus" style="width:16px;height:16px;"></i>
+              </span>
+            </button>
+            <div class="faq-answer-content">
+              <p>Absolument. Notre flotte logistique intervient à Cotonou et sur l'ensemble des départements du Bénin et pays limitrophes avec des camions plateaux et engins de levage pour décharger et positionner vos éléments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         13. BANNIÈRE PANORAMIQUE D'INFORMATIONS SIDÉRURGIQUES
+         ========================================================================== -->
+    <section class="framer-section no-pad-block">
+      <div class="panoramic-banner-card">
+        <img src="images/hero-industrial.jpg" alt="Entrepôt sidérurgique et acier" class="panoramic-bg-img" />
+        <div class="panoramic-overlay"></div>
+        <div class="panoramic-content">
+          <span class="panoramic-tag">VEILLE TECHNIQUE & INNOVATION</span>
+          <h2 class="panoramic-title">
+            Informations & Conseils d'Experts sur l'Acier et la Construction Métallique
+          </h2>
+          <button class="btn-framer-primary open-quote-modal" style="margin-top:16px;">
+            <span>DÉCOUVRIR NOS GUIDES TECHNIQUES</span>
+            <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         14. ACTUALITÉS & ARTICLES TECHNIQUES (3 CARTES)
+         ========================================================================== -->
+    <section class="framer-section" id="actualites">
+      <div class="section-header-center">
+        <div class="section-tag-pill">DERNIERS ARTICLES & DOSSIERS</div>
+        <h2 class="section-heading-lg">Actualités & Dossiers Techniques Métallurgiques</h2>
+        <p class="section-body-text">
+          Retrouvez nos analyses d'ingénieurs sur le dimensionnement des charpentes, le traitement anti-corrosion et l'optimisation des coûts de structure.
+        </p>
+      </div>
+
+      <div class="blog-three-grid">
+        <!-- Article 1 -->
+        <article class="blog-framer-card open-quote-modal">
+          <div class="blog-img-wrap">
+            <img src="images/construction-worker-overseeing-a-crane-operation-o-2026-03-25-00-00-49-utc.jpg" alt="Opérations de levage et grutage" />
+            <span class="blog-category-tag">Ingénierie</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-date-row">
+              <i data-lucide="calendar" style="width:13px;height:13px;"></i>
+              <span>Août 2026 • 4 min de lecture</span>
+            </div>
+            <h3 class="blog-card-title">Comment le pré-perçage en atelier accélère le montage des charpentes de 40%</h3>
+            <p class="blog-card-desc">
+              Découvrez comment l'usinage numérique des platines d'assemblage élimine les ajustements sur chantier et renforce la sécurité des monteurs.
+            </p>
+            <div class="blog-read-more">
+              <span>Lire l'article</span>
+              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 2 -->
+        <article class="blog-framer-card open-quote-modal">
+          <div class="blog-img-wrap">
+            <img src="images/stacked-steel-metal-bars-in-a-factory-2026-01-08-07-15-37-utc.jpg" alt="Stock de tôles et profilés" />
+            <span class="blog-category-tag">Matériaux</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-date-row">
+              <i data-lucide="calendar" style="width:13px;height:13px;"></i>
+              <span>Juillet 2026 • 6 min de lecture</span>
+            </div>
+            <h3 class="blog-card-title">Aluzinc AZ150 vs Acier Galvanisé : quelle protection choisir en zone côtière ?</h3>
+            <p class="blog-card-desc">
+              Comparatif métallurgique complet sur la résistance à la corrosion saline et la durabilité thermique sous climat équatorial humide.
+            </p>
+            <div class="blog-read-more">
+              <span>Lire l'article</span>
+              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </div>
+          </div>
+        </article>
+
+        <!-- Article 3 -->
+        <article class="blog-framer-card open-quote-modal">
+          <div class="blog-img-wrap">
+            <img src="images/hero-lathe-worker.jpg" alt="Usinage de précision" />
+            <span class="blog-category-tag">Usinage CNC</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-date-row">
+              <i data-lucide="calendar" style="width:13px;height:13px;"></i>
+              <span>Juin 2026 • 5 min de lecture</span>
+            </div>
+            <h3 class="blog-card-title">L'impact du pliage numérique 3M sur l'étanchéité des grands entrepôts</h3>
+            <p class="blog-card-desc">
+              Pourquoi l'absence de raccords intermédiaires sur les faîtières et chêneaux élimine définitivement les risques d'infiltration d'eau.
+            </p>
+            <div class="blog-read-more">
+              <span>Lire l'article</span>
+              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         15. PRÉ-FOOTER CTA SOUDURE & ATELIER
+         ========================================================================== -->
+    <section class="framer-section no-pad-bottom">
+      <div class="prefooter-welding-card">
+        <img src="images/hero-machinist-precise.jpg" alt="Soudure industrielle et fabrication métallique" class="welding-bg-photo" />
+        <div class="welding-overlay"></div>
+        <div class="welding-content">
+          <span class="welding-tag">DÉMARREZ VOTRE PROJET</span>
+          <h2 class="welding-title">Confiez Vos Projets de Charpente & Métallurgie à nos Experts</h2>
+          <p class="welding-subtitle">
+            Transmettez votre cahier des charges à notre équipe technique. Nous vous garantissons un chiffrage rapide, compétitif et rigoureusement calculé.
+          </p>
+          <div class="welding-btn-wrap">
+            <button class="btn-framer-primary open-quote-modal">
+              <span>DEMANDER UN DEVIS GRATUIT</span>
+              <i data-lucide="arrow-right" style="width:15px;height:15px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================================================
+       16. FOOTER COMPLET ENRICHI (STYLE FRAMER COULEUR #de522f & NOIR ARDOISE) — FULL WIDTH
+       ========================================================================== -->
+  <footer class="framer-footer" id="contact">
+    <!-- Ruban de contact rapide couleur #de522f -->
+    <div class="footer-crimson-strip">
+      <div class="footer-crimson-strip-inner">
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="phone" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Ligne Directe</span>
+            <strong class="strip-val"><a href="tel:+22999905555">+229 99 90 55 55</a></strong>
+          </div>
+        </div>
+
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="mail" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Support Technique</span>
+            <strong class="strip-val"><a href="mailto:info@fer-co.com">info@fer-co.com</a></strong>
+          </div>
+        </div>
+
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="map-pin" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Atelier & Usine</span>
+            <strong class="strip-val">Cotonou, République du Bénin</strong>
+          </div>
+        </div>
+
+        <div class="footer-strip-item">
+          <div class="strip-icon"><i data-lucide="clock" style="width:20px;height:20px;"></i></div>
+          <div>
+            <span class="strip-label">Horaires d'Ouverture</span>
+            <strong class="strip-val">Lun - Sam : 07h30 - 18h00</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4 Colonnes Principales du Footer -->
+    <div class="footer-main-grid-wrapper">
+      <div class="footer-main-grid">
+        <!-- Col 1 : Marque & Mission -->
+        <div class="footer-brand-col">
+          <div class="footer-logo">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+              <line x1="3" y1="6" x2="21" y2="6"/>
+              <path d="M16 10a4 4 0 0 1-8 0"/>
+            </svg>
+            <span>Fer <strong>. Co</strong></span>
+          </div>
+          <p class="footer-desc">
+            Leader en fabrication de charpentes métalliques, usinage numérique 3M, profilage industriel et modules préfabriqués à Cotonou et en Afrique de l'Ouest.
+          </p>
+          <div class="footer-social-row">
+            <a href="#" class="social-icon-circle" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:16px;height:16px;"></i></a>
+            <a href="#" class="social-icon-circle" aria-label="Facebook"><i data-lucide="facebook" style="width:16px;height:16px;"></i></a>
+            <a href="#" class="social-icon-circle" aria-label="Instagram"><i data-lucide="instagram" style="width:16px;height:16px;"></i></a>
+            <a href="https://wa.me/22999905555" target="_blank" class="social-icon-circle" aria-label="WhatsApp"><i data-lucide="message-circle" style="width:16px;height:16px;"></i></a>
+          </div>
+        </div>
+
+        <!-- Col 2 : Navigation -->
+        <div class="footer-nav-col">
+          <h4 class="footer-title">Navigation</h4>
+          <ul class="footer-links-list">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">Fer . Co (À propos)</a></li>
+            <li><a href="services.html">Services Métallurgiques</a></li>
+            <li><a href="produits.html">Catalogue Produits</a></li>
+            <li><a href="productions.html">Atelier & Productions</a></li>
+            <li><a href="contact.html">Contact & Devis</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 : Solutions Spécifiques -->
+        <div class="footer-nav-col">
+          <h4 class="footer-title">Nos Solutions</h4>
+          <ul class="footer-links-list">
+            <li><a href="produits.html">Poutrelles IPE / HEA / UPN</a></li>
+            <li><a href="services.html">Découpe & Pliage Numérique 3M</a></li>
+            <li><a href="productions.html">Bases-Vie & Conteneurs 20ft/40ft</a></li>
+            <li><a href="produits.html">Bacs Aluzinc AZ150 & Sandwich PUR</a></li>
+            <li><a href="produits.html">Tubes Carrés & Rectangulaires</a></li>
+            <li><a href="services.html">Traitement Anti-Corrosion & Sablage</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4 : Newsletter & Demande Express -->
+        <div class="footer-newsletter-col">
+          <h4 class="footer-title">Restez Informé</h4>
+          <p style="font-size:0.875rem;color:var(--text-white-muted);margin-bottom:14px;">
+            Recevez nos fiches techniques et alertes de stock pour vos approvisionnements de chantier.
+          </p>
+          <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+            <input type="email" placeholder="Votre email professionnel..." required class="newsletter-input" />
+            <button type="submit" class="newsletter-submit-btn" aria-label="S'inscrire">
+              <i data-lucide="send" style="width:15px;height:15px;"></i>
+            </button>
+          </form>
+          <div style="margin-top:16px;">
+            <button class="btn-framer-primary btn-sm open-quote-modal" style="width:100%;">
+              <span>Demande de devis express</span>
+              <i data-lucide="arrow-right" style="width:14px;height:14px;"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sous-footer bas -->
+    <div class="footer-bottom-bar-wrapper">
+      <div class="footer-bottom-bar">
+        <div class="footer-bottom-copy">
+          © 2026 <strong>Fer . Co</strong>. Tous droits réservés. Fabrication & Construction Métallique.
+        </div>
+        <div class="footer-bottom-links">
+          <a href="a-propos.html">Mentions Légales</a>
+          <a href="a-propos.html">Politique de Confidentialité</a>
+          <a href="a-propos.html">Certifications ISO & Eurocodes</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       17. MODALE DE DEVIS EXPRESS INTERACTIF (VERRE DÉPOLI FRAMER)
+       ========================================================================== -->
+  <div class="modal-overlay" id="quoteModalOverlay">
+    <div class="modal-window framer-glass-modal">
+      <button class="modal-close-btn close-quote-modal" aria-label="Fermer la fenêtre">
+        <i data-lucide="x" style="width:18px;height:18px;"></i>
+      </button>
+
+      <div class="modal-header-block">
+        <span class="modal-tag">ÉTUDE TECHNIQUE SOUS 24H</span>
+        <h3 class="modal-title">Demande de Devis Personnalisé</h3>
+        <p class="modal-subtitle">
+          Notre bureau d'études à Cotonou analyse vos spécifications et vous transmet une offre chiffrée détaillée sous 24h ouvrées.
+        </p>
+      </div>
+
+      <form id="quoteModalForm" class="framer-quote-form">
+        <div class="form-group">
+          <label class="form-label" for="quoteDomain">Domaine principal de votre besoin *</label>
+          <select id="quoteDomain" class="form-select">
+            <option value="Charpentes Métalliques & Poutrelles (IPE / HEA)">01. Charpentes Métalliques & Poutrelles (IPE, HEA, Hangars)</option>
+            <option value="Découpe & Pliage Numérique 3M">02. Découpe Numérique, Cisaillage & Pliage 3M</option>
+            <option value="Bâtiments Modulaires & Conteneurs">03. Conteneurs Aménagés & Bases-Vie de Chantier</option>
+            <option value="Tôles Aluzinc & Panneaux Sandwichs">04. Bacs Aluzinc AZ150 & Panneaux Sandwichs PUR</option>
+            <option value="Tubes, Profilés & Serrurerie">05. Tubes Métalliques, Fers & Ouvrages sur Mesure</option>
+          </select>
+        </div>
+
+        <div class="form-row-pair">
+          <div class="form-group">
+            <label class="form-label" for="quoteName">Nom complet / Entreprise *</label>
+            <input type="text" id="quoteName" class="form-input" placeholder="Ex: Jean Dossou / BTP Bénin" required />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="quotePhone">Téléphone / WhatsApp *</label>
+            <input type="tel" id="quotePhone" class="form-input" placeholder="+229 99 90 55 55" required />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="quoteDetails">Dimensions, quantités & spécifications du projet *</label>
+          <textarea id="quoteDetails" class="form-textarea" rows="3" placeholder="Précisez votre besoin (ex : Hangar 20x40m, épaisseur tôle, lieu de livraison, délais souhaités...)" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-framer-primary" style="width:100%;margin-top:8px;">
+          <span>ENVOYER MA DEMANDE DE DEVIS</span>
+          <i data-lucide="send" style="width:16px;height:16px;"></i>
+        </button>
+
+        <div id="quoteModalSuccess" class="modal-success-alert">
+          🎉 Merci ! Votre demande a été transmise avec succès à notre bureau d'études.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Widget Agent de Chat Technique Fer . Co -->
+  <button class="chat-agent-trigger" id="chatAgentTrigger" aria-label="Discuter avec le conseiller technique">
+    <div class="chat-trigger-avatar">
+      <i data-lucide="message-square" style="width:17px;height:17px;"></i>
+      <span class="chat-online-badge"></span>
+    </div>
+    <div class="chat-trigger-text">
+      <span class="chat-trigger-title">Conseiller Fer . Co</span>
+      <span class="chat-trigger-sub">Discuter en direct</span>
+    </div>
+  </button>
+
+  <!-- Fenêtre Popup de Discussion avec l'Agent -->
+  <div class="chat-agent-modal" id="chatAgentModal">
+    <div class="chat-modal-header">
+      <div class="chat-header-info">
+        <div class="chat-header-avatar">
+          <i data-lucide="message-square" style="width:18px;height:18px;"></i>
+        </div>
+        <div>
+          <div class="chat-header-title">Assistant Technique Fer . Co</div>
+          <div class="chat-header-status">
+            <span class="pulse-dot" style="width:6px;height:6px;"></span>
+            <span>Conseiller sidérurgique en direct</span>
+          </div>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chatCloseBtn" aria-label="Fermer le chat">
+        <i data-lucide="x" style="width:16px;height:16px;"></i>
+      </button>
+    </div>
+
+    <div class="chat-modal-body" id="chatModalBody">
+      <div class="chat-msg bot">
+        Bonjour. Je suis le conseiller technique de <strong>Fer . Co</strong>.
+        Comment pouvons-nous vous accompagner sur votre chantier aujourd'hui ?
+      </div>
+      <div class="chat-quick-chips">
+        <button class="chat-chip">Devis Hangar & Charpente</button>
+        <button class="chat-chip">Tôles Aluzinc & Sandwich</button>
+        <button class="chat-chip">Pliage Numérique 3M</button>
+        <button class="chat-chip">Tarifs & Délais</button>
+        <button class="chat-chip">Coordonnées Usine</button>
+      </div>
+    </div>
+
+    <div class="chat-modal-footer">
+      <form class="chat-input-form" id="chatInputForm">
+        <input type="text" id="chatInputField" class="chat-input-field" placeholder="Posez une question technique..." autocomplete="off" />
+        <button type="submit" class="chat-send-btn" aria-label="Envoyer">
+          <i data-lucide="send" style="width:16px;height:16px;"></i>
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Script d'Interactivité -->
+  <script type="module" src="app.js"></script>
+</body>
+</html>
